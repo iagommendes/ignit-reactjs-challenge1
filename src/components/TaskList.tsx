@@ -29,14 +29,11 @@ export function TaskList() {
     } : task)
 
     setTasks(newTask)
-
-    // Altere entre `true` ou `false` o campo `isComplete` de uma task com dado ID
   }
 
   function handleRemoveTask(id: number) {
     const removedTasks = tasks.filter(task => task.id !== id);
     setTasks(removedTasks)
-    // Remova uma task da listagem pelo ID
   }
 
   return (
